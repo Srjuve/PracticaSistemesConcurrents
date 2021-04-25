@@ -1,21 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2a7a5c0b-4d99-44bb-9746-a7dba6286865" name="Default Changelist" comment="" />
+    <list default="true" id="ccbb43eb-ac1d-4647-ada1-a0a3316ae4c5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1rAYGsVdYHnVC0w87nTqfw4KtLL" />
+  <component name="ProjectId" id="1reO5QNvdr1LG4yo4YQQDDIGGFs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -26,12 +43,33 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2a7a5c0b-4d99-44bb-9746-a7dba6286865" name="Default Changelist" comment="" />
-      <created>1618420271410</created>
+      <changelist id="ccbb43eb-ac1d-4647-ada1-a0a3316ae4c5" name="Default Changelist" comment="" />
+      <created>1619332906543</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1618420271410</updated>
+      <updated>1619332906543</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="461" y="144" width="434" height="517" key="FileChooserDialogImpl" timestamp="1619332928358">
+      <screen x="0" y="31" width="1366" height="737" />
+    </state>
+    <state x="461" y="144" width="434" height="517" key="FileChooserDialogImpl/0.31.1366.737@0.31.1366.737" timestamp="1619332928358" />
+    <state x="0" y="31" key="new project wizard" timestamp="1619332930439">
+      <screen x="0" y="31" width="1366" height="737" />
+    </state>
+    <state x="0" y="31" key="new project wizard/0.31.1366.737@0.31.1366.737" timestamp="1619332930439" />
   </component>
 </project>
