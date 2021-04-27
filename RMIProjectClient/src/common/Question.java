@@ -33,7 +33,7 @@ public class Question implements Serializable {
         return this.answers;
     }
     public boolean isCorrectAnswer(String answer) throws exceptions.noCorrectAnswerAdded{
-        if(correctAnswer!=null)
+        if(correctAnswer!=null && answer!=null)
             return answer.equals(this.correctAnswer);
         throw new exceptions.noCorrectAnswerAdded("No correct Answer Added");
     }

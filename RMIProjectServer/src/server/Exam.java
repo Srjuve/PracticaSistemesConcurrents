@@ -1,8 +1,8 @@
 package server;
 
 import common.Question;
+import exceptions.noQuestionsLeft;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -10,9 +10,9 @@ import java.io.FileReader;
 import java.io.BufferedReader;
 
 public class Exam {
-    List<Question> questions;
-    float grade;
-    float pointsCorrectAnswer;
+    private List<Question> questions;
+    private double grade;
+    private double pointsCorrectAnswer;
 
     public Exam(String csvFileName) throws IOException, exceptions.invalidQuestionAnswerFormat,exceptions.correctAnswerAlreadyCreatedException {
         createQuestions(csvFileName);
@@ -29,7 +29,7 @@ public class Exam {
                 questions.add(getQuestion(questionData));
                 i+=1;
             }
-            pointsCorrectAnswer=(1*questions.size())/10;
+            pointsCorrectAnswer=10.0/questions.size();
     }
 
     private Question getQuestion(String[] questionData) throws exceptions.invalidQuestionAnswerFormat,exceptions.correctAnswerAlreadyCreatedException{
@@ -49,22 +49,24 @@ public class Exam {
             throw new exceptions.invalidQuestionAnswerFormat("Incorrect answer format");
         }
     }
-    public Question getNextQuestion() throws exceptions.noQuestionsAdded{
+    public Question getNextQuestion() throws noQuestionsLeft {
         if(questions!=null && questions.size()>0)
             return questions.get(0);
-        throw new exceptions.noQuestionsAdded("Questions haven't been added");
+        throw new noQuestionsLeft("Questions haven't been added");
     }
-    public void answerActualQuestion(String answer) throws exceptions.noCorrectAnswerAdded,exceptions.noQuestionsAdded{
+    public void answerActualQuestion(String answer) throws exceptions.noCorrectAnswerAdded, noQuestionsLeft {
         if(questions!=null && questions.size()>0){
             if (questions.get(0).isCorrectAnswer(answer)) {
-                this.grade+=this.grade+this.pointsCorrectAnswer;
+                this.grade+=this.pointsCorrectAnswer;
+                System.out.println(this.grade);
             }
             questions.remove(0);
+        }else {
+            throw new noQuestionsLeft("Questions haven't been added");
         }
-        throw new exceptions.noQuestionsAdded("Questions haven't been added");
     }
 
-    public float getGrades(){
+    public double getGrades(){
         return this.grade;
     }
 }

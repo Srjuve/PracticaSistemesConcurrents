@@ -20,25 +20,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccbb43eb-ac1d-4647-ada1-a0a3316ae4c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../RMIProjectClient/src/common/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RMIProjectClient/src/common/Room.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RMIProjectClient/src/common/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RMIProjectClient/src/exceptions/correctAnswerAlreadyCreatedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RMIProjectClient/src/exceptions/invalidQuestionAnswerFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RMIProjectClient/src/exceptions/noCorrectAnswerAdded.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../RMIProjectClient/src/exceptions/noQuestionsAdded.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/Question.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/correctAnswerAlreadyCreatedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/invalidQuestionAnswerFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/noCorrectAnswerAdded.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/noQuestionsAdded.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/Exam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/RoomImplementation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RMIProjectClient/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RMIProjectClient/src/client/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RMIProjectClient/src/client/StudentImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RMIProjectClient/src/exceptions/examErrorException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RMIProjectClient/src/exceptions/noQuestionsLeft.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RMIProjectClient/src/exceptions/notAcceptingStudentsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RMIProjectClient/src/exceptions/studentAlreadyJoinedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exceptions/examErrorException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exceptions/noQuestionsLeft.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exceptions/notAcceptingStudentsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exceptions/studentAlreadyJoinedException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RMIProjectClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/src/common/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/src/common/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/src/common/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/src/common/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/src/common/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/src/common/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/src/exceptions/noQuestionsAdded.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/common/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/common/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/common/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/common/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/common/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/common/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Exam.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Exam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exceptions/noQuestionsAdded.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/Exam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Exam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/RoomImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/RoomImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,29 +125,29 @@
       <screen x="0" y="31" width="1366" height="737" />
     </state>
     <state x="461" y="144" width="434" height="517" key="FileChooserDialogImpl/0.31.1366.737@0.31.1366.737" timestamp="1619422955902" />
-    <state width="1320" height="174" key="GridCell.Tab.0.bottom" timestamp="1619384020214">
+    <state width="1320" height="174" key="GridCell.Tab.0.bottom" timestamp="1619559859748">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="174" key="GridCell.Tab.0.bottom/0.31.1366.737@0.31.1366.737" timestamp="1619384020214" />
-    <state width="1320" height="174" key="GridCell.Tab.0.center" timestamp="1619384020213">
+    <state width="1320" height="174" key="GridCell.Tab.0.bottom/0.31.1366.737@0.31.1366.737" timestamp="1619559859748" />
+    <state width="1320" height="174" key="GridCell.Tab.0.center" timestamp="1619559859748">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="174" key="GridCell.Tab.0.center/0.31.1366.737@0.31.1366.737" timestamp="1619384020213" />
-    <state width="1320" height="174" key="GridCell.Tab.0.left" timestamp="1619384020213">
+    <state width="1320" height="174" key="GridCell.Tab.0.center/0.31.1366.737@0.31.1366.737" timestamp="1619559859748" />
+    <state width="1320" height="174" key="GridCell.Tab.0.left" timestamp="1619559859748">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="174" key="GridCell.Tab.0.left/0.31.1366.737@0.31.1366.737" timestamp="1619384020213" />
-    <state width="1320" height="174" key="GridCell.Tab.0.right" timestamp="1619384020213">
+    <state width="1320" height="174" key="GridCell.Tab.0.left/0.31.1366.737@0.31.1366.737" timestamp="1619559859748" />
+    <state width="1320" height="174" key="GridCell.Tab.0.right" timestamp="1619559859748">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="174" key="GridCell.Tab.0.right/0.31.1366.737@0.31.1366.737" timestamp="1619384020213" />
+    <state width="1320" height="174" key="GridCell.Tab.0.right/0.31.1366.737@0.31.1366.737" timestamp="1619559859748" />
     <state x="0" y="31" key="new project wizard" timestamp="1619332930439">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
     <state x="0" y="31" key="new project wizard/0.31.1366.737@0.31.1366.737" timestamp="1619332930439" />
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1619337071565">
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1619458149572">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.31.1366.737@0.31.1366.737" timestamp="1619337071565" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.31.1366.737@0.31.1366.737" timestamp="1619458149572" />
   </component>
 </project>
