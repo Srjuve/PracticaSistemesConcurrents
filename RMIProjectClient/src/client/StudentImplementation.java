@@ -24,9 +24,6 @@ public class StudentImplementation  extends UnicastRemoteObject implements Stude
         return finished;
     }
 
-    public void setExamState(){
-        this.finished=true;
-    }
     public Question getActualQuestion(){
         return this.actualQuestion;
     }
@@ -37,6 +34,7 @@ public class StudentImplementation  extends UnicastRemoteObject implements Stude
     public double getGrade(){
         return this.totalGrade;
     }
+
     public void sendQuestion(Question givenQuestion) throws RemoteException{
         this.actualQuestion=givenQuestion;
         this.semaphore.release();

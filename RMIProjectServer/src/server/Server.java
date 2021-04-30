@@ -59,7 +59,34 @@ public class Server {
         }
     }
 
-    private static void waitForOpenRoom(RoomImplementation room){//Millorar el codi.
+    private static void waitForRoomEvent(RoomImplementation room, String event) throws RemoteException,exceptions.noQuestionsLeft{//Millorar el codi.
+        Object semaphore = new Object();
+        synchronized (semaphore) {
+            Interrupt interrupt = new Interrupt(semaphore, event);
+            interrupt.start();
+            while (!started) {
+                System.out.println("Write " + event + " to "+ event.toLowerCase() +" the Exam");
+                try {
+                    semaphore.wait();
+                } catch (java.lang.InterruptedException ex) {
+                    System.exit(-1);
+                }
+            }
+        }
+        if(event=="Open") {
+            room.startAcceptingStudents();
+            System.out.println("Room opened");
+        }else if(event == "Start"){
+            room.startExam();
+            System.out.println("Exam started");
+        }else{
+            room.finishExam();
+            System.out.println("The Exam has ended");
+        }
+        started=false;
+    }
+
+    /*private static void waitForOpenRoom(RoomImplementation room){//Millorar el codi.
         String openWord="Open";
         Object semaphore = new Object();
         synchronized (semaphore) {
@@ -126,7 +153,7 @@ public class Server {
             System.exit(-1);
         }
     }
-
+    */
     public static void showGrades(RoomImplementation room){
         HashMap<Integer,Double> grades = room.returnGrades();
         Iterator<Integer> students = grades.keySet().iterator();
@@ -142,9 +169,9 @@ public class Server {
             RoomImplementation room = new RoomImplementation();
             registry.bind("room",room);
             System.out.println("Room binded");
-            waitForOpenRoom(room);
-            waitForStartExam(room);
-            waitForEndExam(room);
+            waitForRoomEvent(room,"Open");
+            waitForRoomEvent(room,"Start");
+            waitForRoomEvent(room,"End");
             showGrades(room);
             System.exit(0);
         }catch (Exception ex){

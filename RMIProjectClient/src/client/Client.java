@@ -17,6 +17,7 @@ public class Client {
             System.out.println(String.valueOf(i+1)+":"+answers.get(i));
         }
     }
+
     public static String getAnswers(Question question){
         int answer=-1;
         Scanner scan = new Scanner(System.in);
@@ -37,21 +38,30 @@ public class Client {
         }
         return answers.get(answer-1);
     }
-    public static void startExam(Room examRoom, StudentImplementation actualStudent,Semaphore semaphore) throws RemoteException,InterruptedException {
-        Integer id = actualStudent.getUniversityId();
-        while(!actualStudent.getExamState()){
-            System.out.println("About to wait");
-            semaphore.acquire();
-            if(!actualStudent.getExamState()){
-                Question recievedQuestion=actualStudent.getActualQuestion();
-                System.out.println(recievedQuestion.getQuestion());
-                String answer = getAnswers(recievedQuestion);
-                System.out.println(answer);
-                examRoom.sendAnswer(id,answer);
+
+    public static void startExam(Room examRoom, StudentImplementation actualStudent,Semaphore semaphore) throws InterruptedException {
+        try {
+            Integer id = actualStudent.getUniversityId();
+            while (!actualStudent.getExamState()) {
+                System.out.println("About to wait");
+                semaphore.acquire();
+                if (!actualStudent.getExamState()) {
+                    Question recievedQuestion = actualStudent.getActualQuestion();
+                    System.out.println(recievedQuestion.getQuestion());
+                    String answer = getAnswers(recievedQuestion);
+                    examRoom.sendAnswer(id, answer);
+                }
+            }
+            System.out.println("Exam finished");
+            System.out.println("Your Grade is: "+actualStudent.getGrade());
+        }catch (RemoteException ex){
+            if(actualStudent.getExamState()){
+                System.out.println("Exam finished");
+                System.out.println("Your Grade is: "+actualStudent.getGrade());
+            }else {
+                System.out.println("Room cannot be reached your grade will be set using your actual answers");
             }
         }
-        System.out.println("Exam finished");
-        System.out.println("Your Grade is: "+actualStudent.getGrade());
     }
 
 
@@ -60,14 +70,24 @@ public class Client {
         try {
             Registry registry = LocateRegistry.getRegistry(host);
             Semaphore semaphore = new Semaphore(0);
-            Integer id=new Integer(134);
+            Integer id=new Integer(321);
             StudentImplementation student= new StudentImplementation(id,semaphore);
             Room stub = (Room) registry.lookup("room");
             stub.joinExam(id,student);
-            startExam(stub,student,semaphore);
+            AnswerQuestionsThread answerQuestion = new AnswerQuestionsThread(stub,student, new Semaphore(0));
+            answerQuestion.run();
+            answerQuestion.cancel();
+            //startExam(stub,student,semaphore);
             System.exit(0);
-        } catch (Exception e) {
-            System.err.println("Client exception: " + e.toString()); e.printStackTrace();
+        }catch(exceptions.notAcceptingStudentsException ex){
+            System.out.println("The Room is not accepting new Students.");
+            System.exit(0);
+        }catch(exceptions.studentAlreadyJoinedException ex){
+            System.out.println("You already joined to this exam.");
+            System.exit(0);
+        }catch (Exception e) {
+            System.out.println("Internal Error");
+            System.exit(0);
         }
     }
 }
