@@ -13,11 +13,13 @@ public class StudentImplementation  extends UnicastRemoteObject implements Stude
     private boolean finished=false;
     private Semaphore semaphore;
     private double totalGrade;
+    private Object finishLock;
 
-    public StudentImplementation(Integer universityId,Semaphore semaphore) throws RemoteException{
+    public StudentImplementation(Integer universityId,Semaphore semaphore,Object finishLock) throws RemoteException{
         super();
         this.universityId=universityId;
         this.semaphore =semaphore;
+        this.finishLock=finishLock;
     }
 
     public boolean getExamState(){
@@ -43,7 +45,11 @@ public class StudentImplementation  extends UnicastRemoteObject implements Stude
     public void finishExam(double grade) throws RemoteException{
         totalGrade = grade;
         finished=true;
-        this.semaphore.release();
+        System.out.println("About to notify");
+        synchronized (finishLock){
+            finishLock.notify();
+            System.out.println("Notified");
+        }
         //Avisar al Client que s'ha finalitzat el examen(I finalitzar-li)
     }
 }

@@ -11,73 +11,36 @@ import java.util.concurrent.Semaphore;
 
 public class Client {
 
-
-    public static void printAnswers(List<String> answers){
-        for(int i=0;i<answers.size();i+=1){
-            System.out.println(String.valueOf(i+1)+":"+answers.get(i));
-        }
-    }
-
-    public static String getAnswers(Question question){
-        int answer=-1;
-        Scanner scan = new Scanner(System.in);
-        List<String> answers=question.getAnswers();
-        printAnswers(answers);
-        boolean correctValue=false;
-        while (!correctValue) {
-            try {
-                answer = scan.nextInt();
-                if(answer>0 && answer<=answers.size()) {
-                    correctValue = true;
-                }else{
-                    System.out.println("Invalid value, try again");
-                }
-            }catch (Exception ex){
-                System.out.println("Invalid value, try again");
-            }
-        }
-        return answers.get(answer-1);
-    }
-
-    public static void startExam(Room examRoom, StudentImplementation actualStudent,Semaphore semaphore) throws InterruptedException {
+    private static void waitForFinishSignal(StudentImplementation student,Object finishLock,AnswerQuestionsThread answerQuestion){
         try {
-            Integer id = actualStudent.getUniversityId();
-            while (!actualStudent.getExamState()) {
-                System.out.println("About to wait");
-                semaphore.acquire();
-                if (!actualStudent.getExamState()) {
-                    Question recievedQuestion = actualStudent.getActualQuestion();
-                    System.out.println(recievedQuestion.getQuestion());
-                    String answer = getAnswers(recievedQuestion);
-                    examRoom.sendAnswer(id, answer);
-                }
+            answerQuestion.start();
+            System.out.println("Started thread");
+            synchronized (finishLock) {
+                System.out.println("Waiting");
+                finishLock.wait();
+                System.out.println("Finished waiting");
             }
-            System.out.println("Exam finished");
-            System.out.println("Your Grade is: "+actualStudent.getGrade());
-        }catch (RemoteException ex){
-            if(actualStudent.getExamState()){
-                System.out.println("Exam finished");
-                System.out.println("Your Grade is: "+actualStudent.getGrade());
-            }else {
-                System.out.println("Room cannot be reached your grade will be set using your actual answers");
+            if(answerQuestion.isAlive()){
+                answerQuestion.cancel();
             }
+            System.out.println("You have finished the exam");
+            System.out.println("Your grade is: "+String.valueOf(student.getGrade()));
+        }catch (Exception ex){
+            System.exit(-1);
         }
     }
-
-
     public static void main(String[] args) {
         String host = (args.length < 1) ? null : args[0];
         try {
             Registry registry = LocateRegistry.getRegistry(host);
             Semaphore semaphore = new Semaphore(0);
             Integer id=new Integer(321);
-            StudentImplementation student= new StudentImplementation(id,semaphore);
+            Object finishLock = new Object();
+            StudentImplementation student= new StudentImplementation(id,semaphore,finishLock);
             Room stub = (Room) registry.lookup("room");
             stub.joinExam(id,student);
-            AnswerQuestionsThread answerQuestion = new AnswerQuestionsThread(stub,student, new Semaphore(0));
-            answerQuestion.run();
-            answerQuestion.cancel();
-            //startExam(stub,student,semaphore);
+            AnswerQuestionsThread answerQuestion = new AnswerQuestionsThread(stub,student, semaphore,finishLock);
+            waitForFinishSignal(student,finishLock,answerQuestion);
             System.exit(0);
         }catch(exceptions.notAcceptingStudentsException ex){
             System.out.println("The Room is not accepting new Students.");

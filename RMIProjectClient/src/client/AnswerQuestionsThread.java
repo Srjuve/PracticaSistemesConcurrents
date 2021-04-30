@@ -3,6 +3,7 @@ package client;
 import common.Question;
 import common.Room;
 
+import java.rmi.RemoteException;
 import java.util.List;
 import java.util.Scanner;
 import java.util.concurrent.Semaphore;
@@ -13,11 +14,13 @@ public class AnswerQuestionsThread extends Thread{
     boolean cancel = false;
     Thread thisThread = null;
     Semaphore sem;
-    public AnswerQuestionsThread(Room actualRoom, StudentImplementation student, Semaphore sem){
+    Object finishLock;
+    public AnswerQuestionsThread(Room actualRoom, StudentImplementation student, Semaphore sem,Object finishLock){
         this.actualRoom = actualRoom;
         this.student = student;
         thisThread=Thread.currentThread();
         this.sem=sem;
+        this.finishLock=finishLock;
     }
 
     public void cancel(){
@@ -26,15 +29,29 @@ public class AnswerQuestionsThread extends Thread{
     }
     @Override
     public void run(){
-            while(true && !cancel && !thisThread.isInterrupted()){
+        Integer id = this.student.getUniversityId();
+        try {
+            while (!this.student.getExamState() && !cancel && !thisThread.isInterrupted()) {
+                System.out.println("About to wait");
                 try {
-                    System.out.println("Patatatatatatata");
                     this.sem.acquire();
-                }catch (InterruptedException ex){
-                    return;
+                    if (!this.student.getExamState()) {
+                        Question recievedQuestion = this.student.getActualQuestion();
+                        System.out.println(recievedQuestion.getQuestion());
+                        String answer = getAnswers(recievedQuestion);
+                        this.actualRoom.sendAnswer(id, answer);
+                    }
+                } catch (InterruptedException ex) {
+                    System.out.println("Exam finished");
                 }
             }
-            return;
+        }catch (RemoteException ex){
+            System.out.println("Connection lost");
+            synchronized (finishLock){
+                finishLock.notify();
+            }
+        }
+        return;
     }
 
     private String getAnswers(Question question){
