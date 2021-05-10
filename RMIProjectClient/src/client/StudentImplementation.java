@@ -45,10 +45,8 @@ public class StudentImplementation  extends UnicastRemoteObject implements Stude
     public void finishExam(double grade) throws RemoteException{
         totalGrade = grade;
         finished=true;
-        System.out.println("About to notify");
         synchronized (finishLock){
             finishLock.notify();
-            System.out.println("Notified");
         }
         //Avisar al Client que s'ha finalitzat el examen(I finalitzar-li)
     }

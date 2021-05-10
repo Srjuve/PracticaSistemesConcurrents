@@ -12,6 +12,7 @@ public class Server {
     public static boolean started = false;
 
     private static class Interrupt extends Thread {
+        //Read keyboard class
         String interrupt_key = null;
         Object semaphore = null;
 
@@ -27,7 +28,7 @@ public class Server {
                 Scanner scanner = new Scanner(System.in);
                 String x = scanner.nextLine();
                 if (x.equals(this.interrupt_key)) {
-                    //if is the key we expect, change the variable, notify and return(finish thread)
+                    //If is the key we expect, change the variable, notify and return(finish thread)
                     synchronized (this.semaphore) {
                         started = true;
                         this.semaphore.notify();
@@ -59,7 +60,8 @@ public class Server {
         }
     }
 
-    private static void waitForRoomEvent(RoomImplementation room, String event) throws RemoteException,exceptions.noQuestionsLeft{//Millorar el codi.
+    private static void waitForRoomEvent(RoomImplementation room, String event) throws RemoteException,exceptions.noQuestionsLeft{
+        //This method waits for the Professor to start a event by writing the asked word
         Object semaphore = new Object();
         synchronized (semaphore) {
             Interrupt interrupt = new Interrupt(semaphore, event);
@@ -87,6 +89,7 @@ public class Server {
     }
 
     public static void showGrades(RoomImplementation room){
+        //Show the grades of every student on the terminal
         HashMap<Integer,Double> grades = room.returnGrades();
         Iterator<Integer> students = grades.keySet().iterator();
         System.out.println("Grades:");
@@ -95,12 +98,16 @@ public class Server {
             System.out.println("The student with id: "+String.valueOf(id)+" has a grade of: "+String.valueOf(grades.get(id)));
         }
     }
+
     public static void main(String[] args){
         try {
             Registry registry = startRegistry(null);
             RoomImplementation room = new RoomImplementation();
             registry.bind("room",room);
-            System.out.println("Room binded");
+            System.out.println("Enter csv questions file route");
+            Scanner scan = new Scanner(System.in);
+            String route = scan.nextLine();
+            room.setCSVFile(route);
             waitForRoomEvent(room,"Open");
             waitForRoomEvent(room,"Start");
             waitForRoomEvent(room,"End");
@@ -108,6 +115,7 @@ public class Server {
             System.exit(0);
         }catch (Exception ex){
             System.out.println(ex.getMessage());
+            System.exit(-1);
         }
     }
 }

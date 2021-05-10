@@ -15,6 +15,7 @@ public class AnswerQuestionsThread extends Thread{
     Thread thisThread = null;
     Semaphore sem;
     Object finishLock;
+
     public AnswerQuestionsThread(Room actualRoom, StudentImplementation student, Semaphore sem,Object finishLock){
         this.actualRoom = actualRoom;
         this.student = student;
@@ -23,10 +24,6 @@ public class AnswerQuestionsThread extends Thread{
         this.finishLock=finishLock;
     }
 
-    public void cancel(){
-        cancel = true;
-        this.interrupt();
-    }
     @Override
     public void run(){
         Integer id = this.student.getUniversityId();
@@ -39,7 +36,9 @@ public class AnswerQuestionsThread extends Thread{
                         Question recievedQuestion = this.student.getActualQuestion();
                         System.out.println(recievedQuestion.getQuestion());
                         String answer = getAnswers(recievedQuestion);
-                        this.actualRoom.sendAnswer(id, answer);
+                        if(!this.student.getExamState()) {
+                            this.actualRoom.sendAnswer(id, answer);
+                        }
                     }
                 } catch (InterruptedException ex) {
                     System.out.println("Exam finished");
@@ -62,7 +61,7 @@ public class AnswerQuestionsThread extends Thread{
         boolean correctValue=false;
         while (!correctValue) {
             try {
-                answer = scan.nextInt();
+                answer = Integer.parseInt(scan.nextLine());
                 if(answer>0 && answer<=answers.size()) {
                     correctValue = true;
                 }else{

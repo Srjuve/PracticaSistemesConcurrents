@@ -28,6 +28,12 @@
       <change beforePath="$PROJECT_DIR$/../RMIProjectClient/src/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/src/client/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RMIProjectClient/src/client/StudentImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/src/client/StudentImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Exam.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Exam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/server/RoomImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/server/RoomImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Server$Interrupt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Server$Interrupt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/Exam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Exam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/RoomImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/RoomImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,26 +111,30 @@
       <screen x="0" y="31" width="1366" height="737" />
     </state>
     <state x="461" y="144" width="434" height="517" key="FileChooserDialogImpl/0.31.1366.737@0.31.1366.737" timestamp="1619728592127" />
-    <state width="1320" height="174" key="GridCell.Tab.0.bottom" timestamp="1619817751326">
+    <state width="1320" height="173" key="GridCell.Tab.0.bottom" timestamp="1620687592853">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="174" key="GridCell.Tab.0.bottom/0.31.1366.737@0.31.1366.737" timestamp="1619817751326" />
-    <state width="1320" height="174" key="GridCell.Tab.0.center" timestamp="1619817751326">
+    <state width="1320" height="173" key="GridCell.Tab.0.bottom/0.31.1366.737@0.31.1366.737" timestamp="1620687592853" />
+    <state width="1320" height="173" key="GridCell.Tab.0.center" timestamp="1620687592852">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="174" key="GridCell.Tab.0.center/0.31.1366.737@0.31.1366.737" timestamp="1619817751326" />
-    <state width="1320" height="174" key="GridCell.Tab.0.left" timestamp="1619817751326">
+    <state width="1320" height="173" key="GridCell.Tab.0.center/0.31.1366.737@0.31.1366.737" timestamp="1620687592852" />
+    <state width="1320" height="173" key="GridCell.Tab.0.left" timestamp="1620687592852">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="174" key="GridCell.Tab.0.left/0.31.1366.737@0.31.1366.737" timestamp="1619817751326" />
-    <state width="1320" height="174" key="GridCell.Tab.0.right" timestamp="1619817751326">
+    <state width="1320" height="173" key="GridCell.Tab.0.left/0.31.1366.737@0.31.1366.737" timestamp="1620687592852" />
+    <state width="1320" height="173" key="GridCell.Tab.0.right" timestamp="1620687592852">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="174" key="GridCell.Tab.0.right/0.31.1366.737@0.31.1366.737" timestamp="1619817751326" />
+    <state width="1320" height="173" key="GridCell.Tab.0.right/0.31.1366.737@0.31.1366.737" timestamp="1620687592852" />
     <state x="0" y="31" key="new project wizard" timestamp="1619332930439">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
     <state x="0" y="31" key="new project wizard/0.31.1366.737@0.31.1366.737" timestamp="1619332930439" />
+    <state x="342" y="177" key="run.anything.popup" timestamp="1620467096990">
+      <screen x="0" y="31" width="1366" height="737" />
+    </state>
+    <state x="342" y="177" key="run.anything.popup/0.31.1366.737@0.31.1366.737" timestamp="1620467096990" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1619458149572">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
