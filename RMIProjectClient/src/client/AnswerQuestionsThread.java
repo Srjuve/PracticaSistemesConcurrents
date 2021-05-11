@@ -29,7 +29,7 @@ public class AnswerQuestionsThread extends Thread{
         Integer id = this.student.getUniversityId();
         try {
             while (!this.student.getExamState() && !cancel && !thisThread.isInterrupted()) {
-                System.out.println("About to wait");
+                System.out.println("Waiting for question");
                 try {
                     this.sem.acquire();
                     if (!this.student.getExamState()) {

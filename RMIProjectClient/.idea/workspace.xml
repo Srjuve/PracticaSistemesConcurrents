@@ -21,19 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1b74c017-c4f7-41f4-96af-49d2e5ddd038" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectClient/client/AnswerQuestionsThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectClient/client/AnswerQuestionsThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectClient/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectClient/client/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectClient/client/StudentImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectClient/client/StudentImplementation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/AnswerQuestionsThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/AnswerQuestionsThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/StudentImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/StudentImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RMIProjectServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/out/production/RMIProjectServer/server/Exam.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/out/production/RMIProjectServer/server/Exam.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/out/production/RMIProjectServer/server/RoomImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/out/production/RMIProjectServer/server/RoomImplementation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/out/production/RMIProjectServer/server/Server$Interrupt.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/out/production/RMIProjectServer/server/Server$Interrupt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/out/production/RMIProjectServer/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/out/production/RMIProjectServer/server/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/src/server/Exam.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/src/server/Exam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/src/server/RoomImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/src/server/RoomImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RMIProjectServer/src/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/src/server/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,22 +125,22 @@
       <screen x="0" y="31" width="1366" height="737" />
     </state>
     <state x="466" y="160" width="434" height="487" key="FileChooserDialogImpl/0.31.1366.737@0.31.1366.737" timestamp="1619451633657" />
-    <state width="1320" height="162" key="GridCell.Tab.0.bottom" timestamp="1620687587705">
+    <state width="1320" height="162" key="GridCell.Tab.0.bottom" timestamp="1620768119050">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="162" key="GridCell.Tab.0.bottom/0.31.1366.737@0.31.1366.737" timestamp="1620687587705" />
-    <state width="1320" height="162" key="GridCell.Tab.0.center" timestamp="1620687587705">
+    <state width="1320" height="162" key="GridCell.Tab.0.bottom/0.31.1366.737@0.31.1366.737" timestamp="1620768119050" />
+    <state width="1320" height="162" key="GridCell.Tab.0.center" timestamp="1620768119049">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="162" key="GridCell.Tab.0.center/0.31.1366.737@0.31.1366.737" timestamp="1620687587705" />
-    <state width="1320" height="162" key="GridCell.Tab.0.left" timestamp="1620687587705">
+    <state width="1320" height="162" key="GridCell.Tab.0.center/0.31.1366.737@0.31.1366.737" timestamp="1620768119049" />
+    <state width="1320" height="162" key="GridCell.Tab.0.left" timestamp="1620768119048">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="162" key="GridCell.Tab.0.left/0.31.1366.737@0.31.1366.737" timestamp="1620687587705" />
-    <state width="1320" height="162" key="GridCell.Tab.0.right" timestamp="1620687587705">
+    <state width="1320" height="162" key="GridCell.Tab.0.left/0.31.1366.737@0.31.1366.737" timestamp="1620768119048" />
+    <state width="1320" height="162" key="GridCell.Tab.0.right" timestamp="1620768119049">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="162" key="GridCell.Tab.0.right/0.31.1366.737@0.31.1366.737" timestamp="1620687587705" />
+    <state width="1320" height="162" key="GridCell.Tab.0.right/0.31.1366.737@0.31.1366.737" timestamp="1620768119049" />
     <state width="1320" height="251" key="GridCell.Tab.1.bottom" timestamp="1619527728763">
       <screen x="0" y="31" width="1366" height="737" />
     </state>

@@ -16,9 +16,6 @@ public class Client {
             synchronized (finishLock) {
                 finishLock.wait();
             }
-            /*if(answerQuestion.isAlive()){
-                answerQuestion.cancel();
-            }*/
             System.out.println("You have finished the exam");
             System.out.println("Your grade is: "+String.valueOf(student.getGrade()));
         }catch (Exception ex){

@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Server {
 
-    public static boolean started = false;
+    private static boolean started = false;
 
     private static class Interrupt extends Thread {
         //Read keyboard class
@@ -88,7 +88,7 @@ public class Server {
         started=false;
     }
 
-    public static void showGrades(RoomImplementation room){
+    private static void showGrades(RoomImplementation room){
         //Show the grades of every student on the terminal
         HashMap<Integer,Double> grades = room.returnGrades();
         Iterator<Integer> students = grades.keySet().iterator();

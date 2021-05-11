@@ -33,21 +33,22 @@ public class StudentImplementation  extends UnicastRemoteObject implements Stude
     public Integer getUniversityId(){
         return this.universityId;
     }
+
     public double getGrade(){
         return this.totalGrade;
     }
 
     public void sendQuestion(Question givenQuestion) throws RemoteException{
+        //Inform the Student that the requested question is ready to be answered
         this.actualQuestion=givenQuestion;
         this.semaphore.release();
-        //Avisar al Client que hi ha una pregunta disponible
     }
     public void finishExam(double grade) throws RemoteException{
+        //Inform the Student that the exam has ended
         totalGrade = grade;
         finished=true;
         synchronized (finishLock){
             finishLock.notify();
         }
-        //Avisar al Client que s'ha finalitzat el examen(I finalitzar-li)
     }
 }
