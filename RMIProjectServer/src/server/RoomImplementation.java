@@ -5,7 +5,8 @@ import common.Room;
 import common.Student;
 import exceptions.invalidQuestionAnswerFormat;
 import exceptions.noQuestionsLeft;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+import exceptions.alreadyStartedException;
+//import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -19,47 +20,31 @@ public class RoomImplementation extends UnicastRemoteObject implements Room {
     private HashMap<Integer, Exam> actualExams;
     private HashMap<Integer, Student> actualStudents;
     private HashMap<Integer, Double> studentsGrades;
+    private Exam examTemplate;
     private String csvRoute;
     private boolean acceptingStudents;
+    private boolean started;
 
     public RoomImplementation() throws RemoteException{
         actualExams = new HashMap<>();
         actualStudents = new HashMap<>();
         studentsGrades = new HashMap<>();
         acceptingStudents=false;
+        started=false;
+    }
+    public boolean getAcceptingStudents(){
+        return this.acceptingStudents;
+    }
+
+    public boolean getStarted(){
+        return this.started;
     }
     public void setCSVFile(String csvRoute) throws exceptions.invalidQuestionAnswerFormat, IOException {
         this.csvRoute=csvRoute;
-        checkValidQuestionsFile();
-    }
-
-    private void checkValidQuestionsFile() throws exceptions.invalidQuestionAnswerFormat, IOException {
-        BufferedReader fileReader = new BufferedReader(new FileReader(this.csvRoute));
-        String line = "";
-        int i=0;
-        while ((line = fileReader.readLine()) != null) {
-            String[] questionData = line.split(";");
-            checkQuestion(questionData);
-            i+=1;
-        }
-        if(i==0){
-            throw new exceptions.invalidQuestionAnswerFormat("No questions added");
-        }
-    }
-
-    private void checkQuestion(String[] questionData) throws exceptions.invalidQuestionAnswerFormat{
-        //Check if the question has a valid format
-        if(questionData.length>=3){
-            try{
-                int number=Integer.parseInt(questionData[questionData.length - 1]);
-                if(number<=0 || number>=questionData.length-1){
-                    throw new invalidQuestionAnswerFormat("Correct answer indicator does not point to the correct question");
-                }
-            }catch(NumberFormatException ex){
-                throw new invalidQuestionAnswerFormat("Correct answer indicator is not an Integer");
-            }
-        }else{
-            throw new invalidQuestionAnswerFormat("Minimum question/answer fields required");
+        try {
+            this.examTemplate = new Exam(this.csvRoute);
+        }catch (exceptions.correctAnswerAlreadyCreatedException ex){
+            throw new exceptions.invalidQuestionAnswerFormat(ex.getMessage());
         }
     }
 
@@ -68,16 +53,21 @@ public class RoomImplementation extends UnicastRemoteObject implements Room {
         acceptingStudents=true;
     }
 
-    public void startExam() throws noQuestionsLeft,RemoteException{
+    public void startExam() throws noQuestionsLeft,RemoteException,alreadyStartedException{
         //Stop accepting students, and send the first question to every registered Student
         synchronized (this) {
-            acceptingStudents = false;
-            Set<Integer> allStudentsID = actualStudents.keySet();
-            Iterator<Integer> it = allStudentsID.iterator();
-            while (it.hasNext()) {
-                Integer actualID = it.next();
-                Question newQuestion = actualExams.get(actualID).getNextQuestion();
-                actualStudents.get(actualID).sendQuestion(newQuestion);
+            if(!this.started) {
+                this.started=true;
+                acceptingStudents = false;
+                Set<Integer> allStudentsID = actualStudents.keySet();
+                Iterator<Integer> it = allStudentsID.iterator();
+                while (it.hasNext()) {
+                    Integer actualID = it.next();
+                    Question newQuestion = actualExams.get(actualID).getNextQuestion();
+                    actualStudents.get(actualID).sendQuestion(newQuestion);
+                }
+            }else{
+                throw new alreadyStartedException("The exam has already started");
             }
         }
     }
@@ -92,14 +82,14 @@ public class RoomImplementation extends UnicastRemoteObject implements Room {
         synchronized(this) {
             if (acceptingStudents) {
                 if(!actualStudents.containsKey(universityId)){
-                    try {
-                        actualExams.put(universityId, new Exam(this.csvRoute));
+                    //try {
+                        actualExams.put(universityId,this.examTemplate.copyExam());
                         actualStudents.put(universityId,joinedStudent);
                         System.out.println("Student with ID "+universityId.toString()+" joined.");
                         System.out.println("Number of students joined: "+String.valueOf(getJoinedStudentsNumbers()));
-                    }catch (Exception ex){
+                    /*}catch (Exception ex){
                         throw new exceptions.examErrorException(ex.getMessage());
-                    }
+                    }*/
                 }else{
                     throw new exceptions.studentAlreadyJoinedException("This student already joined the room");
                 }

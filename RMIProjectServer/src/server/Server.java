@@ -1,5 +1,8 @@
 package server;
-import java.io.PrintStream;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
@@ -60,7 +63,7 @@ public class Server {
         }
     }
 
-    private static void waitForRoomEvent(RoomImplementation room, String event) throws RemoteException,exceptions.noQuestionsLeft{
+    private static void waitForRoomEvent(RoomImplementation room, String event) throws RemoteException,exceptions.noQuestionsLeft,exceptions.alreadyStartedException{
         //This method waits for the Professor to start a event by writing the asked word
         Object semaphore = new Object();
         synchronized (semaphore) {
@@ -88,15 +91,24 @@ public class Server {
         started=false;
     }
 
-    private static void showGrades(RoomImplementation room){
+    private static void saveGrades(RoomImplementation room) throws IOException {
         //Show the grades of every student on the terminal
         HashMap<Integer,Double> grades = room.returnGrades();
         Iterator<Integer> students = grades.keySet().iterator();
+        System.out.println("Enter the grades dest file name");
+        Scanner scan = new Scanner(System.in);
+        String fileName = scan.nextLine();
+        FileWriter myWriter = new FileWriter("./GradesData/"+fileName);
+        scan.close();
         System.out.println("Grades:");
         while(students.hasNext()){
             Integer id=students.next();
-            System.out.println("The student with id: "+String.valueOf(id)+" has a grade of: "+String.valueOf(grades.get(id)));
+            String data="The student with id: "+String.valueOf(id)+" has a grade of: "+String.valueOf(grades.get(id));
+            myWriter.write(data);
+            myWriter.write('\n');
+            System.out.println(data);
         }
+        myWriter.close();
     }
 
     public static void main(String[] args){
@@ -111,7 +123,7 @@ public class Server {
             waitForRoomEvent(room,"Open");
             waitForRoomEvent(room,"Start");
             waitForRoomEvent(room,"End");
-            showGrades(room);
+            saveGrades(room);
             System.exit(0);
         }catch (Exception ex){
             System.out.println(ex.getMessage());

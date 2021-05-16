@@ -20,11 +20,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccbb43eb-ac1d-4647-ada1-a0a3316ae4c5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Tests/testsExam/ExamExceptionsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/testsExam/ExamFuncTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/testsQuestion/QuestionExceptionsTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/testsQuestion/QuestionFuncTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/testsRoom/RoomExceptionsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tests/testsRoom/RoomFuncTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dummys/SimpleStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exceptions/alreadyStartedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RMIProjectClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/src/client/AnswerQuestionsThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/src/client/AnswerQuestionsThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/client/AnswerQuestionsThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/client/AnswerQuestionsThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/client/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/client/StudentImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/client/StudentImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/common/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/common/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/common/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/common/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/common/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/common/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/correctAnswerAlreadyCreatedException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/correctAnswerAlreadyCreatedException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/examErrorException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/examErrorException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/invalidQuestionAnswerFormat.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/invalidQuestionAnswerFormat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/noCorrectAnswerAdded.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/noCorrectAnswerAdded.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/noQuestionsLeft.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/noQuestionsLeft.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/notAcceptingStudentsException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/notAcceptingStudentsException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/studentAlreadyJoinedException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/studentAlreadyJoinedException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RMIProjectClient/src/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/src/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/src/client/StudentImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/src/client/StudentImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/src/common/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/src/common/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RMIProjectServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RMIProjectServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/common/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/common/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/common/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/common/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/common/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/common/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/correctAnswerAlreadyCreatedException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/correctAnswerAlreadyCreatedException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/examErrorException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/examErrorException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/invalidQuestionAnswerFormat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/invalidQuestionAnswerFormat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/noCorrectAnswerAdded.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/noCorrectAnswerAdded.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/noQuestionsLeft.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/noQuestionsLeft.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/notAcceptingStudentsException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/notAcceptingStudentsException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/studentAlreadyJoinedException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/studentAlreadyJoinedException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Exam.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Exam.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/server/RoomImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/server/RoomImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Server$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Server$Interrupt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Server$Interrupt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/Exam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Exam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/RoomImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/RoomImplementation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +77,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -50,17 +92,36 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../RMIProjectClient" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.12469831" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="testsExam" />
+      <recent name="server" />
+      <recent name="testsRoom" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Server">
     <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="server.Server" />
       <module name="RMIProjectServer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="server.*" />
+          <option name="PATTERN" value="testsRoom.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,9 +129,68 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in RMIProjectServer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RMIProjectServer" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuestionExceptionsTests.checkIfCorrectWithoutCorrectAnswers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RMIProjectServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testsQuestion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testsQuestion" />
+      <option name="MAIN_CLASS_NAME" value="testsQuestion.QuestionExceptionsTests" />
+      <option name="METHOD_NAME" value="checkIfCorrectWithoutCorrectAnswers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuestionFuncTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RMIProjectServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testsQuestion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testsQuestion" />
+      <option name="MAIN_CLASS_NAME" value="testsQuestion.QuestionFuncTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuestionFuncTest.copyQustionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RMIProjectServer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testsQuestion.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testsQuestion" />
+      <option name="MAIN_CLASS_NAME" value="testsQuestion.QuestionFuncTest" />
+      <option name="METHOD_NAME" value="copyQustionTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Server" />
+        <item itemvalue="JUnit.All in RMIProjectServer" />
+        <item itemvalue="JUnit.QuestionFuncTest" />
+        <item itemvalue="JUnit.QuestionFuncTest.copyQustionTest" />
+        <item itemvalue="JUnit.QuestionExceptionsTests.checkIfCorrectWithoutCorrectAnswers" />
       </list>
     </recent_temporary>
   </component>
@@ -98,34 +218,54 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="461" y="144" width="434" height="517" key="FileChooserDialogImpl" timestamp="1619728592127">
+    <state x="0" y="31" key="#Project_Structure" timestamp="1620944892437">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state x="461" y="144" width="434" height="517" key="FileChooserDialogImpl/0.31.1366.737@0.31.1366.737" timestamp="1619728592127" />
-    <state width="1320" height="173" key="GridCell.Tab.0.bottom" timestamp="1620687592853">
+    <state x="0" y="31" key="#Project_Structure/0.31.1366.737@0.31.1366.737" timestamp="1620944892437" />
+    <state x="416" y="181" width="534" height="448" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1620996096363">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="173" key="GridCell.Tab.0.bottom/0.31.1366.737@0.31.1366.737" timestamp="1620687592853" />
-    <state width="1320" height="173" key="GridCell.Tab.0.center" timestamp="1620687592852">
+    <state x="416" y="181" width="534" height="448" key="#com.intellij.ide.util.PackageChooserDialog/0.31.1366.737@0.31.1366.737" timestamp="1620996096363" />
+    <state x="461" y="144" width="434" height="517" key="FileChooserDialogImpl" timestamp="1621029031025">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="173" key="GridCell.Tab.0.center/0.31.1366.737@0.31.1366.737" timestamp="1620687592852" />
-    <state width="1320" height="173" key="GridCell.Tab.0.left" timestamp="1620687592852">
+    <state x="461" y="144" width="434" height="517" key="FileChooserDialogImpl/0.31.1366.737@0.31.1366.737" timestamp="1621029031025" />
+    <state width="1320" height="229" key="GridCell.Tab.0.bottom" timestamp="1621187138600">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="173" key="GridCell.Tab.0.left/0.31.1366.737@0.31.1366.737" timestamp="1620687592852" />
-    <state width="1320" height="173" key="GridCell.Tab.0.right" timestamp="1620687592852">
+    <state width="1320" height="229" key="GridCell.Tab.0.bottom/0.31.1366.737@0.31.1366.737" timestamp="1621187138600" />
+    <state width="1320" height="229" key="GridCell.Tab.0.center" timestamp="1621187138599">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="173" key="GridCell.Tab.0.right/0.31.1366.737@0.31.1366.737" timestamp="1620687592852" />
+    <state width="1320" height="229" key="GridCell.Tab.0.center/0.31.1366.737@0.31.1366.737" timestamp="1621187138599" />
+    <state width="1320" height="229" key="GridCell.Tab.0.left" timestamp="1621187138599">
+      <screen x="0" y="31" width="1366" height="737" />
+    </state>
+    <state width="1320" height="229" key="GridCell.Tab.0.left/0.31.1366.737@0.31.1366.737" timestamp="1621187138599" />
+    <state width="1320" height="229" key="GridCell.Tab.0.right" timestamp="1621187138600">
+      <screen x="0" y="31" width="1366" height="737" />
+    </state>
+    <state width="1320" height="229" key="GridCell.Tab.0.right/0.31.1366.737@0.31.1366.737" timestamp="1621187138600" />
+    <state x="0" y="31" key="SettingsEditor" timestamp="1620862320437">
+      <screen x="0" y="31" width="1366" height="737" />
+    </state>
+    <state x="0" y="31" key="SettingsEditor/0.31.1366.737@0.31.1366.737" timestamp="1620862320437" />
+    <state x="355" y="295" width="655" height="217" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1620945234862">
+      <screen x="0" y="31" width="1366" height="737" />
+    </state>
+    <state x="355" y="295" width="655" height="217" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.31.1366.737@0.31.1366.737" timestamp="1620945234862" />
+    <state x="457" y="213" width="452" height="380" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1621003515709">
+      <screen x="0" y="31" width="1366" height="737" />
+    </state>
+    <state x="457" y="213" width="452" height="380" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.31.1366.737@0.31.1366.737" timestamp="1621003515709" />
     <state x="0" y="31" key="new project wizard" timestamp="1619332930439">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
     <state x="0" y="31" key="new project wizard/0.31.1366.737@0.31.1366.737" timestamp="1619332930439" />
-    <state x="342" y="177" key="run.anything.popup" timestamp="1620467096990">
+    <state x="342" y="177" key="run.anything.popup" timestamp="1621092357811">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state x="342" y="177" key="run.anything.popup/0.31.1366.737@0.31.1366.737" timestamp="1620467096990" />
+    <state x="342" y="177" key="run.anything.popup/0.31.1366.737@0.31.1366.737" timestamp="1621092357811" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1619458149572">
       <screen x="0" y="31" width="1366" height="737" />
     </state>

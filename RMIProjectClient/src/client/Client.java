@@ -38,6 +38,7 @@ public class Client {
         }
         return userid;
     }
+
     public static void main(String[] args) {
         String host = (args.length < 1) ? null : args[0];
         try {
