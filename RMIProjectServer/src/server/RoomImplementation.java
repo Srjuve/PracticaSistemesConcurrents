@@ -1,15 +1,13 @@
 package server;
 
-import common.Question;
 import common.Room;
 import common.Student;
-import exceptions.invalidQuestionAnswerFormat;
+import common.studentQuestion;
 import exceptions.noQuestionsLeft;
 import exceptions.alreadyStartedException;
 //import sun.reflect.generics.reflectiveObjects.NotImplementedException;
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
+import java.rmi.ConnectException;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.HashMap;
@@ -64,7 +62,7 @@ public class RoomImplementation extends UnicastRemoteObject implements Room {
                 while (it.hasNext()) {
                     Integer actualID = it.next();
                     Question newQuestion = actualExams.get(actualID).getNextQuestion();
-                    actualStudents.get(actualID).sendQuestion(newQuestion);
+                    actualStudents.get(actualID).sendQuestion(new studentQuestion(newQuestion.getQuestion(),newQuestion.getAnswers()));
                 }
             }else{
                 throw new alreadyStartedException("The exam has already started");
@@ -77,19 +75,15 @@ public class RoomImplementation extends UnicastRemoteObject implements Room {
     }
 
     public void joinExam(Integer universityId, Student joinedStudent) throws RemoteException,exceptions.notAcceptingStudentsException,
-            exceptions.studentAlreadyJoinedException,exceptions.examErrorException{
+            exceptions.studentAlreadyJoinedException{
         //Remote Function: The student with ID universityId joins the exam.Send exceptions if anything goes wrong.
         synchronized(this) {
             if (acceptingStudents) {
                 if(!actualStudents.containsKey(universityId)){
-                    //try {
                         actualExams.put(universityId,this.examTemplate.copyExam());
                         actualStudents.put(universityId,joinedStudent);
                         System.out.println("Student with ID "+universityId.toString()+" joined.");
                         System.out.println("Number of students joined: "+String.valueOf(getJoinedStudentsNumbers()));
-                    /*}catch (Exception ex){
-                        throw new exceptions.examErrorException(ex.getMessage());
-                    }*/
                 }else{
                     throw new exceptions.studentAlreadyJoinedException("This student already joined the room");
                 }
@@ -105,12 +99,15 @@ public class RoomImplementation extends UnicastRemoteObject implements Room {
         Iterator<Integer> it = allStudentsID.iterator();
         synchronized(this) {
             while (it.hasNext()) {
-                Integer actualID = it.next();
-                if (!studentsGrades.containsKey(actualID)) {
-                    double studentGrade = actualExams.get(actualID).getGrades();
-                    actualStudents.get(actualID).finishExam(studentGrade);
-                    studentsGrades.put(actualID,studentGrade);
-                }
+
+                    Integer actualID = it.next();
+                    if (!studentsGrades.containsKey(actualID)) {
+                        double studentGrade = actualExams.get(actualID).getGrades();
+                        try {
+                            actualStudents.get(actualID).finishExam(studentGrade);
+                        }catch (ConnectException ex){}
+                        studentsGrades.put(actualID, studentGrade);
+                    }
             }
         }
     }
@@ -127,7 +124,7 @@ public class RoomImplementation extends UnicastRemoteObject implements Room {
                 if(actualStudents.containsKey(universityID) && !studentsGrades.containsKey(universityID)) {
                     actualExams.get(universityID).answerActualQuestion(answer);
                     Question newQuestion = actualExams.get(universityID).getNextQuestion();
-                    actualStudents.get(universityID).sendQuestion(newQuestion);
+                    actualStudents.get(universityID).sendQuestion(new studentQuestion(newQuestion.getQuestion(),newQuestion.getAnswers()));
                 }
             } catch (exceptions.noQuestionsLeft ex) {
                 if (!studentsGrades.containsKey(universityID)) {

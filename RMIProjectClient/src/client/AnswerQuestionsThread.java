@@ -1,6 +1,6 @@
 package client;
 
-import common.Question;
+import common.studentQuestion;
 import common.Room;
 
 import java.rmi.RemoteException;
@@ -33,9 +33,9 @@ public class AnswerQuestionsThread extends Thread{
                 try {
                     this.sem.acquire();
                     if (!this.student.getExamState()) {
-                        Question recievedQuestion = this.student.getActualQuestion();
-                        System.out.println(recievedQuestion.getQuestion());
-                        String answer = getAnswers(recievedQuestion);
+                        studentQuestion recievedStudentQuestion = this.student.getActualQuestion();
+                        System.out.println(recievedStudentQuestion.getQuestion());
+                        String answer = getAnswers(recievedStudentQuestion);
                         if(!this.student.getExamState()) {
                             this.actualRoom.sendAnswer(id, answer);
                         }
@@ -53,10 +53,10 @@ public class AnswerQuestionsThread extends Thread{
         return;
     }
 
-    private String getAnswers(Question question){
+    private String getAnswers(studentQuestion studentQuestion){
         int answer=-1;
         Scanner scan = new Scanner(System.in);
-        List<String> answers=question.getAnswers();
+        List<String> answers= studentQuestion.getAnswers();
         printAnswers(answers);
         boolean correctValue=false;
         while (!correctValue) {

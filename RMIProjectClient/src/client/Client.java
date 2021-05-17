@@ -1,5 +1,4 @@
 package client;
-import common.Question;
 import common.Room;
 
 import java.rmi.registry.LocateRegistry;

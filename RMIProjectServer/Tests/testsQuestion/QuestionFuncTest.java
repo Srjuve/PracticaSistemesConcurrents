@@ -1,6 +1,6 @@
 package testsQuestion;
 
-import common.Question;
+import server.Question;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

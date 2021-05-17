@@ -1,6 +1,5 @@
 package server;
 
-import common.Question;
 import exceptions.invalidQuestionAnswerFormat;
 import exceptions.noQuestionsLeft;
 

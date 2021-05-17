@@ -20,53 +20,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccbb43eb-ac1d-4647-ada1-a0a3316ae4c5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Tests/testsExam/ExamExceptionsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/testsExam/ExamFuncTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/testsQuestion/QuestionExceptionsTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/testsQuestion/QuestionFuncTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/testsRoom/RoomExceptionsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tests/testsRoom/RoomFuncTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dummys/SimpleStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exceptions/alreadyStartedException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/common/studentQuestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/servicelocator/CachedServiceLocatorNoDataTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/servicelocator/CachedServiceLocatorValidDataTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/servicelocator/SimpleServiceLocatorNoDataTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/servicelocator/SimpleServiceLocatorValidDataTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/FactoryA1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/FactoryB1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/FactoryC1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/FactoryD1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/ImplementationA1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/ImplementationB1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/ImplementationC1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/ImplementationD1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/InterfaceA.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/InterfaceB.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/InterfaceC.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/InterfaceD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/src/servicelocator/CachedServiceLocator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/src/servicelocator/Factory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/src/servicelocator/LocatorError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/src/servicelocator/ServiceLocator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/src/servicelocator/SimpleServiceLocator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../RMIProjectClient/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/client/AnswerQuestionsThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/client/AnswerQuestionsThread.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/client/Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/client/StudentImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/client/StudentImplementation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/common/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/common/Question.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/common/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/common/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/common/Question.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/common/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/common/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/correctAnswerAlreadyCreatedException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/correctAnswerAlreadyCreatedException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/examErrorException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/examErrorException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/invalidQuestionAnswerFormat.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/invalidQuestionAnswerFormat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/noCorrectAnswerAdded.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/noCorrectAnswerAdded.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/noQuestionsLeft.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/noQuestionsLeft.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/notAcceptingStudentsException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/notAcceptingStudentsException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/studentAlreadyJoinedException.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/out/production/RMIProjectClient/exceptions/studentAlreadyJoinedException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/src/client/AnswerQuestionsThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/src/client/AnswerQuestionsThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RMIProjectClient/src/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/src/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/src/common/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/src/common/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/src/client/StudentImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/src/client/StudentImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/src/common/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/src/common/studentQuestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectClient/src/common/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectClient/src/common/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RMIProjectServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/RMIProjectServer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/common/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/common/Question.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/common/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/common/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GradesData/grades1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/testsQuestion/QuestionExceptionsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/testsQuestion/QuestionExceptionsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/testsQuestion/QuestionFuncTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/testsQuestion/QuestionFuncTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/common/Question.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/common/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/common/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/correctAnswerAlreadyCreatedException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/correctAnswerAlreadyCreatedException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/examErrorException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/examErrorException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/invalidQuestionAnswerFormat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/invalidQuestionAnswerFormat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/noCorrectAnswerAdded.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/noCorrectAnswerAdded.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/noQuestionsLeft.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/noQuestionsLeft.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/notAcceptingStudentsException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/notAcceptingStudentsException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/studentAlreadyJoinedException.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/exceptions/studentAlreadyJoinedException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/dummys/SimpleStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/dummys/SimpleStudent.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Exam.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Exam.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/server/RoomImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/server/RoomImplementation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Server$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Server$Interrupt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Server$Interrupt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectServer/server/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/RMIProjectServer/testsExam/ExamExceptionsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/RMIProjectServer/testsExam/ExamExceptionsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/RMIProjectServer/testsExam/ExamFuncTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/RMIProjectServer/testsExam/ExamFuncTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/RMIProjectServer/testsQuestion/QuestionExceptionsTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/RMIProjectServer/testsQuestion/QuestionExceptionsTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/RMIProjectServer/testsQuestion/QuestionFuncTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/RMIProjectServer/testsQuestion/QuestionFuncTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/RMIProjectServer/testsRoom/RoomFuncTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/RMIProjectServer/testsRoom/RoomFuncTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Question.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dummys/SimpleStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dummys/SimpleStudent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/Exam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Exam.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/RoomImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/RoomImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,22 +235,22 @@
       <screen x="0" y="31" width="1366" height="737" />
     </state>
     <state x="461" y="144" width="434" height="517" key="FileChooserDialogImpl/0.31.1366.737@0.31.1366.737" timestamp="1621029031025" />
-    <state width="1320" height="229" key="GridCell.Tab.0.bottom" timestamp="1621187138600">
+    <state width="1320" height="229" key="GridCell.Tab.0.bottom" timestamp="1621263130313">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="229" key="GridCell.Tab.0.bottom/0.31.1366.737@0.31.1366.737" timestamp="1621187138600" />
-    <state width="1320" height="229" key="GridCell.Tab.0.center" timestamp="1621187138599">
+    <state width="1320" height="229" key="GridCell.Tab.0.bottom/0.31.1366.737@0.31.1366.737" timestamp="1621263130313" />
+    <state width="1320" height="229" key="GridCell.Tab.0.center" timestamp="1621263130312">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="229" key="GridCell.Tab.0.center/0.31.1366.737@0.31.1366.737" timestamp="1621187138599" />
-    <state width="1320" height="229" key="GridCell.Tab.0.left" timestamp="1621187138599">
+    <state width="1320" height="229" key="GridCell.Tab.0.center/0.31.1366.737@0.31.1366.737" timestamp="1621263130312" />
+    <state width="1320" height="229" key="GridCell.Tab.0.left" timestamp="1621263130312">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="229" key="GridCell.Tab.0.left/0.31.1366.737@0.31.1366.737" timestamp="1621187138599" />
-    <state width="1320" height="229" key="GridCell.Tab.0.right" timestamp="1621187138600">
+    <state width="1320" height="229" key="GridCell.Tab.0.left/0.31.1366.737@0.31.1366.737" timestamp="1621263130312" />
+    <state width="1320" height="229" key="GridCell.Tab.0.right" timestamp="1621263130313">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="229" key="GridCell.Tab.0.right/0.31.1366.737@0.31.1366.737" timestamp="1621187138600" />
+    <state width="1320" height="229" key="GridCell.Tab.0.right/0.31.1366.737@0.31.1366.737" timestamp="1621263130313" />
     <state x="0" y="31" key="SettingsEditor" timestamp="1620862320437">
       <screen x="0" y="31" width="1366" height="737" />
     </state>

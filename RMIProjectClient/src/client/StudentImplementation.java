@@ -1,6 +1,6 @@
 package client;
 
-import common.Question;
+import common.studentQuestion;
 import common.Student;
 
 import java.rmi.RemoteException;
@@ -9,7 +9,7 @@ import java.util.concurrent.Semaphore;
 
 public class StudentImplementation  extends UnicastRemoteObject implements Student{
     private Integer universityId;
-    private Question actualQuestion;
+    private studentQuestion actualStudentQuestion;
     private boolean finished=false;
     private Semaphore semaphore;
     private double totalGrade;
@@ -26,8 +26,8 @@ public class StudentImplementation  extends UnicastRemoteObject implements Stude
         return finished;
     }
 
-    public Question getActualQuestion(){
-        return this.actualQuestion;
+    public studentQuestion getActualQuestion(){
+        return this.actualStudentQuestion;
     }
 
     public Integer getUniversityId(){
@@ -38,9 +38,9 @@ public class StudentImplementation  extends UnicastRemoteObject implements Stude
         return this.totalGrade;
     }
 
-    public void sendQuestion(Question givenQuestion) throws RemoteException{
+    public void sendQuestion(studentQuestion givenStudentQuestion) throws RemoteException{
         //Inform the Student that the requested question is ready to be answered
-        this.actualQuestion=givenQuestion;
+        this.actualStudentQuestion = givenStudentQuestion;
         this.semaphore.release();
     }
     public void finishExam(double grade) throws RemoteException{
