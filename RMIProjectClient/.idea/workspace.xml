@@ -20,7 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b74c017-c4f7-41f4-96af-49d2e5ddd038" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../RMIProjectServer/src/common/studentQuestion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/servicelocator/CachedServiceLocatorNoDataTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/servicelocator/CachedServiceLocatorValidDataTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/servicelocator/SimpleServiceLocatorNoDataTest.java" beforeDir="false" />
@@ -43,33 +42,9 @@
       <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/src/servicelocator/ServiceLocator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/src/servicelocator/SimpleServiceLocator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectClient/client/AnswerQuestionsThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectClient/client/AnswerQuestionsThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectClient/client/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectClient/client/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectClient/client/StudentImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectClient/client/StudentImplementation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectClient/common/Question.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RMIProjectClient/common/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RMIProjectClient/common/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/AnswerQuestionsThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/AnswerQuestionsThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/StudentImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/StudentImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/studentQuestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/studentQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/studentQuestion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RMIProjectServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/GradesData/grades1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/Tests/testsQuestion/QuestionExceptionsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/Tests/testsQuestion/QuestionExceptionsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/Tests/testsQuestion/QuestionFuncTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/Tests/testsQuestion/QuestionFuncTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/out/production/RMIProjectServer/common/Question.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/out/production/RMIProjectServer/common/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/out/production/RMIProjectServer/common/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/out/production/RMIProjectServer/dummys/SimpleStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/out/production/RMIProjectServer/dummys/SimpleStudent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/out/production/RMIProjectServer/server/Exam.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/out/production/RMIProjectServer/server/Exam.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/out/production/RMIProjectServer/server/RoomImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/out/production/RMIProjectServer/server/RoomImplementation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/out/test/RMIProjectServer/testsExam/ExamExceptionsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/out/test/RMIProjectServer/testsExam/ExamExceptionsTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/out/test/RMIProjectServer/testsExam/ExamFuncTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/out/test/RMIProjectServer/testsExam/ExamFuncTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/out/test/RMIProjectServer/testsQuestion/QuestionExceptionsTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/out/test/RMIProjectServer/testsQuestion/QuestionExceptionsTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/out/test/RMIProjectServer/testsQuestion/QuestionFuncTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/out/test/RMIProjectServer/testsQuestion/QuestionFuncTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/out/test/RMIProjectServer/testsRoom/RoomFuncTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/out/test/RMIProjectServer/testsRoom/RoomFuncTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/src/common/Question.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/src/server/Question.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/src/common/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/src/common/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/src/dummys/SimpleStudent.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/src/dummys/SimpleStudent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/src/common/studentQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/src/common/studentQuestion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RMIProjectServer/src/server/Exam.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/src/server/Exam.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RMIProjectServer/src/server/RoomImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/src/server/RoomImplementation.java" afterDir="false" />
     </list>

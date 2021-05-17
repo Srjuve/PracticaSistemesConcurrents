@@ -30,6 +30,7 @@ public class RoomImplementation extends UnicastRemoteObject implements Room {
         acceptingStudents=false;
         started=false;
     }
+
     public boolean getAcceptingStudents(){
         return this.acceptingStudents;
     }
@@ -37,7 +38,9 @@ public class RoomImplementation extends UnicastRemoteObject implements Room {
     public boolean getStarted(){
         return this.started;
     }
+
     public void setCSVFile(String csvRoute) throws exceptions.invalidQuestionAnswerFormat, IOException {
+        //Create the exam template using the given CSV file
         this.csvRoute=csvRoute;
         try {
             this.examTemplate = new Exam(this.csvRoute);

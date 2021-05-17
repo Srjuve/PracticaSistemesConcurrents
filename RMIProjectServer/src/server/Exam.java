@@ -64,21 +64,6 @@ public class Exam {
         }else{
             throw new invalidQuestionAnswerFormat("Minimum question/answer fields required");
         }
-        /*try{
-            Question newQuestion = new Question(questionData[0]);
-            List<String> answers = new ArrayList<>();
-            for (int i = 1; i < questionData.length - 1; i += 1) {
-                answers.add(questionData[i]);
-            }
-            newQuestion.setAnswers(answers);
-            int correctAnswer=Integer.parseInt(questionData[questionData.length - 1])-1;
-            if(correctAnswer>=questionData.length || correctAnswer<0)
-                throw new exceptions.invalidQuestionAnswerFormat("Correct answer indicator does not point to the correct question");
-            newQuestion.setCorrectAnswer(correctAnswer);
-            return newQuestion;
-        }catch (NumberFormatException | ArrayIndexOutOfBoundsException ex){
-            throw new exceptions.invalidQuestionAnswerFormat("Incorrect answer format");
-        }*/
     }
     public Question getNextQuestion() throws noQuestionsLeft {
         //Returns the next question of the exam and, if there are no more questions returns the exception noQuestionsLeft
@@ -105,6 +90,7 @@ public class Exam {
     }
 
     public Exam copyExam(){
+        //Creates a identical copy of the actual this Exam instance
         List<Question> newQuestions = new ArrayList<>();
         Iterator<Question> iter = this.questions.listIterator();
         while(iter.hasNext()){

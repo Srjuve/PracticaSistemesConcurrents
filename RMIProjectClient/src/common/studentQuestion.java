@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 
 public class studentQuestion implements Serializable {
+    //This class is used to send only the necessary data to the Students.
     String question;
     List<String> answers;
 
