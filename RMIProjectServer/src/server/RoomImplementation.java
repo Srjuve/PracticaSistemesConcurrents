@@ -102,7 +102,6 @@ public class RoomImplementation extends UnicastRemoteObject implements Room {
         Iterator<Integer> it = allStudentsID.iterator();
         synchronized(this) {
             while (it.hasNext()) {
-
                     Integer actualID = it.next();
                     if (!studentsGrades.containsKey(actualID)) {
                         double studentGrade = actualExams.get(actualID).getGrades();

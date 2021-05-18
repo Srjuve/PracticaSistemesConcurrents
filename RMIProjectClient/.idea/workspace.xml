@@ -20,32 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b74c017-c4f7-41f4-96af-49d2e5ddd038" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/servicelocator/CachedServiceLocatorNoDataTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/servicelocator/CachedServiceLocatorValidDataTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/servicelocator/SimpleServiceLocatorNoDataTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/servicelocator/SimpleServiceLocatorValidDataTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/FactoryA1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/FactoryB1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/FactoryC1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/FactoryD1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/ImplementationA1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/ImplementationB1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/ImplementationC1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/ImplementationD1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/InterfaceA.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/InterfaceB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/InterfaceC.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/Tests/testClasses/InterfaceD.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/src/servicelocator/CachedServiceLocator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/src/servicelocator/Factory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/src/servicelocator/LocatorError.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/src/servicelocator/ServiceLocator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Activitat1AMPEP/src/servicelocator/SimpleServiceLocator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/studentQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/studentQuestion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RMIProjectServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/src/common/studentQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/src/common/studentQuestion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RMIProjectServer/src/server/Exam.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/src/server/Exam.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../RMIProjectServer/src/server/RoomImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RMIProjectServer/src/server/RoomImplementation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -150,22 +126,22 @@
       <screen x="0" y="31" width="1366" height="737" />
     </state>
     <state x="466" y="160" width="434" height="487" key="FileChooserDialogImpl/0.31.1366.737@0.31.1366.737" timestamp="1621029060959" />
-    <state width="1320" height="162" key="GridCell.Tab.0.bottom" timestamp="1621263133521">
+    <state width="1320" height="162" key="GridCell.Tab.0.bottom" timestamp="1621369235688">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="162" key="GridCell.Tab.0.bottom/0.31.1366.737@0.31.1366.737" timestamp="1621263133521" />
-    <state width="1320" height="162" key="GridCell.Tab.0.center" timestamp="1621263133521">
+    <state width="1320" height="162" key="GridCell.Tab.0.bottom/0.31.1366.737@0.31.1366.737" timestamp="1621369235688" />
+    <state width="1320" height="162" key="GridCell.Tab.0.center" timestamp="1621369235688">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="162" key="GridCell.Tab.0.center/0.31.1366.737@0.31.1366.737" timestamp="1621263133521" />
-    <state width="1320" height="162" key="GridCell.Tab.0.left" timestamp="1621263133521">
+    <state width="1320" height="162" key="GridCell.Tab.0.center/0.31.1366.737@0.31.1366.737" timestamp="1621369235688" />
+    <state width="1320" height="162" key="GridCell.Tab.0.left" timestamp="1621369235688">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="162" key="GridCell.Tab.0.left/0.31.1366.737@0.31.1366.737" timestamp="1621263133521" />
-    <state width="1320" height="162" key="GridCell.Tab.0.right" timestamp="1621263133521">
+    <state width="1320" height="162" key="GridCell.Tab.0.left/0.31.1366.737@0.31.1366.737" timestamp="1621369235688" />
+    <state width="1320" height="162" key="GridCell.Tab.0.right" timestamp="1621369235688">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
-    <state width="1320" height="162" key="GridCell.Tab.0.right/0.31.1366.737@0.31.1366.737" timestamp="1621263133521" />
+    <state width="1320" height="162" key="GridCell.Tab.0.right/0.31.1366.737@0.31.1366.737" timestamp="1621369235688" />
     <state width="1320" height="217" key="GridCell.Tab.1.bottom" timestamp="1621118839659">
       <screen x="0" y="31" width="1366" height="737" />
     </state>
